@@ -2,15 +2,20 @@
     width: 100%;
     display: flex;
     flex-flow: wrap;
-    justify-content: center;
+    gap: 5px;
 }
 
 
 .product_card{
     width: calc(100% / 4 - 5px) ;
-    height: 250px;
+    height: fit-content;
     padding: 10px;
     cursor: pointer;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     
 }
 
@@ -21,8 +26,14 @@
 
 .pagination{
     display: flex;
+    width: fit-content;
+    margin:  0 auto;
+    font-size: 20px;
+    gap: 5px;
+    border: 1px solid black;
+    align-items: center;
     justify-content: center;
-    width: 100%;
+    padding: 1rem;
     
 }
 
@@ -43,4 +54,21 @@
 
 .page_selected{
     background-color: rgb(219, 120, 120);
+}
+
+
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.images img{
+    width:calc(100% / 4 - 5px);
+    height: 50px;
+
+}
+
+.images img:hover{
+    scale: 1.2;
 }
